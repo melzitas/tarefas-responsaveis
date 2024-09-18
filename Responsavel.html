@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Responsável</title>
+    <link rel="stylesheet" href="Responsavel.css">
+</head>
+<body>
+    <div class="container">
+    <header>
+        <nav>
+            <ul>
+                
+                <li><a href="/projeto_tarefa/public/Tarefa.html">Home</a></li>
+               
+                <li class="dropdown">
+                    <a href="#servicos" class="dropbtn">Tarefas</a>
+                    <ul class="dropdown-content">
+                        <li><a href="/projeto_tarefa/public/Tarefa.html">Criar </a></li>
+                        <li><a href="#Ler">Ler </a></li>
+                        <li><a href="#Atualizar">Atualizar </a></li>
+                        <li><a href="#Deletar">Deletar </a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </nav>
+        </header>
+    <div class="container">
+    <div class="form-container">
+        <h2>Cadastrar Responsável</h2>
+        <form action="/responsaveis" method="POST">
+
+            <form class="form">
+                <center><a href="Tarefa.html"><img src="img/Taks.gif" alt=""></a></center> 
+            <p id="heading">Cadastrar Responsável</p>
+         
+            <div class="field">
+           
+            <div class="form-group">
+                <label for="nome">Nome do Responsável:</label>
+                <input class="input type= "text id="nome" name="nome" placeholder="Digite o nome do responsável" required>
+            </div>
+
+            
+            <div class="form-group">
+                <label for="email">E-mail do Responsável (opcional):</label>
+                <input class="input type="email" id="email" name="email" placeholder="Digite o e-mail do responsável">
+            </div>
+
+           
+            <div class="form-group">
+                <button type="submit">Salvar Tarefa</button>
+                <form action="/Cadresponsaveis" method="post">
+            </div>
+        </form>
+    </div>
+    </div>
+</div>
+</body>
+</html>
